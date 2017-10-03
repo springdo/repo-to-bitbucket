@@ -13,11 +13,11 @@ How to use this?
 ```
 touch $HOME/.r2b-credentials.sh
 ```
-3. Add the following to `.r2b-credentials.sh` using your bitbucket account credentials and team name. Use the `.r2b-credentials.example.sh` as an example
+3. Add the following to `.r2b-credentials.sh` replacing `<YOUR_USER>`, `<YOUR_PASSWORD>` and `<YOUR_TEAM>` to your BitBucket account credentials and Team name. Use the `.r2b-credentials.example.sh` as an example
 ```
-export BITBUCKET_TEAM='<YOUR_TEAM_HERE>'
-export BITBUCKET_USER='<YOUR_USER_HERE>'
-export BITBUCKET_PASSWORD='<YOUR_PASSWORD_HERE>'
+export BITBUCKET_TEAM='<YOUR_TEAM>'
+export BITBUCKET_USER='<YOUR_USER>'
+export BITBUCKET_PASSWORD='<YOUR_PASSWORD>'
 ```
 4. Symlink the full path to the scripts location to your bin directory so you can run the script from any dir.
 ```
