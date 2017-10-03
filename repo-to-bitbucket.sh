@@ -8,7 +8,20 @@ set -o pipefail
 
 CURRENT_DIR=`pwd`
 
-source .credentials.sh
+source $HOME/.r2b-credentials.sh
+
+if [ -z "$BITBUCKET_USER" ];then
+  echo -e "\n\n** Please ensure your BITBUCKET_USER is setup in $HOME/.r2b-credentials.sh **"
+  exit 999
+fi
+if [ -z "$BITBUCKET_TEAM" ];then
+  echo -e "\n\n** Please ensure your BITBUCKET_TEAM is setup in $HOME/.r2b-credentials.sh **"
+  exit 999
+fi
+if [ -z "$BITBUCKET_PASSWORD" ];then
+  echo -e "\n\n** Please ensure your BITBUCKET_PASSWORD is setup in $HOME/.r2b-credentials.sh **"
+  exit 999
+fi
 
 function doGitMigrate(){
   for REPO in `ls "$CURRENT_DIR"`;do

@@ -9,11 +9,11 @@ The script runs over a directory and checks if each subfolder is a git repo. If 
 How to use this?
 -----
 1. Git clone the repo to somewhere sensible
-2. Create a `.credentials.sh` file in the root of the project and make it executable.
+2. Create a hidden `.r2b-credentials.sh` file in the `$HOME` dir of the user.
 ```
-touch .credentials.sh && chmod 755 .credentials.sh
+touch $HOME/.r2b-credentials.sh
 ```
-3. Add the following to `.credentials.sh` using your bitbucket account credentials and team name. Use the `.credentials.example.sh` as an example
+3. Add the following to `.r2b-credentials.sh` using your bitbucket account credentials and team name. Use the `.r2b-credentials.example.sh` as an example
 ```
 export BITBUCKET_TEAM='<YOUR_TEAM_HERE>'
 export BITBUCKET_USER='<YOUR_USER_HERE>'
@@ -23,7 +23,7 @@ export BITBUCKET_PASSWORD='<YOUR_PASSWORD_HERE>'
 ```
 sudo ln -s /full/path/to/repo-to-bitbucket/repo-to-bitbucket.sh /usr/local/bin/repo-to-bitbucket
 ```
-5. Navigate to a folder containing a collection of other git repository and run the script using `repo-to-bitbucket`. 
+5. Navigate to a folder containing a collection of other git repository and run the script using `repo-to-bitbucket`.
 For example file structure below shows a folder called `my-git-projects` which contains a bunch of other repositories. To back those up, run the script from `my-git-projects`.
 
 ```
