@@ -8,8 +8,8 @@ The script runs over a directory and checks if each subfolder is a git repo. If 
 
 How to use this?
 -----
-1. git clone the repo
-2. change the following vars in `repo-to-bitbucket.sh` to your bitbucket account credentials and team name
+1. Git clone the repo to somewhere sensible
+2. Change the following vars in `repo-to-bitbucket.sh` to your bitbucket account credentials and team name
 ```
 export BITBUCKET_TEAM='<YOUR_TEAM_HERE>'
 export BITBUCKET_USER='<YOUR_USER_HERE>'
@@ -19,3 +19,4 @@ export BITBUCKET_PASSWORD='<YOUR_PASSWORD_HERE>'
 ```
 sudo ln -s /full/path/to/repo-to-bitbucket/repo-to-bitbucket.sh /usr/local/bin/repo-to-bitbucket
 ```
+4. Navigate to a folder containing a collection of other git repository and run the script using `repo-to-bitbucket`
