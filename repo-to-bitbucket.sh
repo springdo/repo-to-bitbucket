@@ -8,11 +8,7 @@ set -o pipefail
 
 CURRENT_DIR=`pwd`
 
-# CHANGE THESE TO YOUR USER INFO
-export BITBUCKET_TEAM='<YOUR_TEAM_HERE>'
-export BITBUCKET_USER='<YOUR_USER_HERE>'
-export BITBUCKET_PASSWORD='<YOUR_PASSWORD_HERE>'
-
+source .credentials.sh
 
 function doGitMigrate(){
   for REPO in `ls "$CURRENT_DIR"`;do
