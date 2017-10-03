@@ -23,12 +23,16 @@ export BITBUCKET_PASSWORD='<YOUR_PASSWORD_HERE>'
 ```
 sudo ln -s /full/path/to/repo-to-bitbucket/repo-to-bitbucket.sh /usr/local/bin/repo-to-bitbucket
 ```
-5. Navigate to a folder containing a collection of other git repository and run the script using `repo-to-bitbucket`. Example file structure below shows a folder called `my-git-projects` which contains a bunch of other repositories. To back those up, run the script from `my-git-projects`
+5. Navigate to a folder containing a collection of other git repository and run the script using `repo-to-bitbucket`. 
+For example file structure below shows a folder called `my-git-projects` which contains a bunch of other repositories. To back those up, run the script from `my-git-projects`.
+
+```
 .
 +-- my-git-projects
 |   +-- some-cool-app
-|   +-- +-- .git
+|       +-- .git
 |   +-- other-fun-app
-|   +-- +-- .git
+|       +-- .git
 |   +-- also-fun-app
-|   +-- +-- .git
+|       +-- .git
+```
