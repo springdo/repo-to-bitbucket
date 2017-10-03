@@ -4,7 +4,7 @@
 # set -o errexit
 set -o pipefail
 # enable for debug
-set -o xtrace
+# set -o xtrace
 
 CURRENT_DIR=`pwd`
 
